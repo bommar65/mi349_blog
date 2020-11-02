@@ -6,38 +6,93 @@ h1 {
     font-size: 3em;
 }
 a[ href$=".html"] {
-    color: green;
+    color: rgb(0, 51, 0);
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-    padding: 10px;
     background: darkslategrey;
     color: white;
     border-top: 10px solid #242424;
 }
+ul {
+    list-style-type: none;
+    padding:0px;
+    font-size: 20px;
+}
 article{
     margin: 10px;
-    padding: 50px;
+    padding: 10px;
     border-bottom: 1px dotted white;
+    display: flex;
+    align-items: stretch
 }
+
 .book-image{
     padding: 30px;
-    
     width: 200;
     height: 400;
 }
-p {
-    line-height: 1.3em;
+section {
+    margin: 20px;
+    margin-left: 200px;
+    padding: 30px;
+}
+.art_content {
+    line-height: 1.5em;
     padding: 20px;
+    margin-right: 300px;
 }
 .blog-post{
     border-bottom: 1px dotted white;
 }
 .tables{
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(18, 29, 29);
+    align-self: flex-end;
+    margin: 100px;
+    padding: 10px;
 }
 #Parker-intro{
     font-style: italic;
+}
+#nav_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#nav_bar li {
+    background: #999999;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+#nav_bar :nth-child(2){
+    flex-grow: 2;
+}
+
+#big_nav {
+    background:  rgb(18, 29, 29);
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+    padding: 0px;
+}
+.contact_form{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.contact_form :nth-child(1),
+.contact_form :nth-child(3) {
+  margin-top: 5px;
+}
+.contact_form :nth-child(3) {
+  flex: 1;
+}
+.contact_form :nth-child(4) {
+   
+}
+.contact_form :nth-child(5) {
+    margin-top: 5px;
 }
