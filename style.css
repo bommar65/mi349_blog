@@ -40,7 +40,7 @@ section {
 .art_content {
     line-height: 1.5em;
     padding: 20px;
-    margin-right: 300px;
+    margin-right: 100px;
 }
 .blog-post{
     border-bottom: 1px dotted white;
@@ -83,16 +83,37 @@ section {
     display: flex;
     flex-direction: column;
 }
-.contact_form :nth-child(1),
 .contact_form :nth-child(3) {
   margin-top: 5px;
 }
 .contact_form :nth-child(3) {
   flex: 1;
 }
-.contact_form :nth-child(4) {
-   
+
 }
 .contact_form :nth-child(5) {
     margin-top: 5px;
+}
+@media (max-width: 400px) {
+    .book-image{
+        padding: 5px;
+        width: 100%;
+    }
+    section {
+        margin: 20px;
+
+        padding: 30px;
+    }
+    body {
+        margin: 20px;
+    }
+    article{
+        display: inline;
+    }
+    .art_content {
+        margin: 1px;
+    }
+    .tables {
+        margin: 0;
+    }
 }
